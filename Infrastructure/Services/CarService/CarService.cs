@@ -3,17 +3,19 @@ using Dapper;
 using Domain.ApiResponse;
 using Domain.Entities;
 using Infrastructure.DbContext;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http.Features;
 
 namespace Infrastructure.Services.CarService;
 
-public class CarService(DapperContext context): ICarService
+public class CarService(DapperContext context, IWebHostEnvironment webHostEnvironment): ICarService
 {
     public async Task<Response<List<Car>>> GetCarsAsync()
     {
         using (var connection = await context.GetConnectionAsync())
         {
             var sql = @"select * from cars";
-            var result = connection.Query<Car>(sql);
+            var result =  connection.Query<Car>(sql);
             return new Response<List<Car>>(result.ToList(), "Cars retrieved successfully");
         }
     } 
@@ -31,29 +33,54 @@ public class CarService(DapperContext context): ICarService
 
     public async Task<Response<string>> AddCarAsync(Car car)
     {
-        using (var connection = await context.GetConnectionAsync())
+        
+        var wwwRootPath = webHostEnvironment.WebRootPath;
+        var folderPath = Path.Combine(wwwRootPath, "CarPhoto");
+        var fileName = car.Photo.FileName;
+        if (!Directory.Exists(folderPath))
         {
-            var sql =
-                @"insert into cars(Model, Manufacturer, Year, PrisePerDay) values(@Model, @Manufacturer, @Year, @PrisePerDay)";
-            var result = await connection.ExecuteAsync(sql, car);
-            return result == 0 
-                ? new Response<string>("Car not added successfully.", HttpStatusCode.InternalServerError) 
-                : new Response<string>(null,"Car added successfully");
+            Directory.CreateDirectory(folderPath);
         }
+        var fullPath = Path.Combine(folderPath, fileName);
+        await using (var connection = await context.GetConnectionAsync())
+        {
+
+            await using (var stream = File.Create(fullPath))
+            {
+                await car.Photo.CopyToAsync(stream);
+            }
+
+
+            var sql =
+                @"insert into cars(Model, Manufacturer, Year, PricePerDay, Photo) values(@Model, @Manufacturer, @Year, @PricePerDay, @Photo)";
+            var anonymousObject = new
+            {
+                Model = car.Model,
+                Manufacturer = car.Manufacturer,
+                Year = car.Year,
+                PricePerDay = car.PricePerDay,
+                Photo = car.Photo.FileName
+            };
+            var result = await connection.ExecuteAsync(sql, anonymousObject);
+            return result == 0
+                ? new Response<string>("Car not added successfully.", HttpStatusCode.InternalServerError)
+                : new Response<string>(null, "Car added successfully");
+        }
+
     }
 
     public async Task<Response<string>> UpdateCarAsync(Car car)
     {
         using (var connection = await context.GetConnectionAsync())
         {
-            var cmd = await connection.QueryFirstOrDefaultAsync<Car>("select * from cars where id = @id", car);
+            var cmd = await connection.QueryFirstOrDefaultAsync<Car>("select * from cars where id = @id", new {id = car.Id});
             if (cmd == null)
             {
                 return new Response<string>("Car not found", HttpStatusCode.NotFound);
             }
 
             var sql =
-                @"update cars set Model = @Model, Manufacturer = @Manufacturer, Year = @Year, PrisePerDay = @PrisePerDay where id = @id";
+                @"update cars set Model = @Model, Manufacturer = @Manufacturer, Year = @Year, PricePerDay = @PricePerDay where id = @id";
             var result = await connection.ExecuteAsync(sql, car);
             return result == 0 
                 ? new Response<string>("Car not updated successfully", HttpStatusCode.InternalServerError) 

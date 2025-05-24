@@ -120,3 +120,5 @@ C:\Users\admin\RiderProjects\Rentacar1\WebApplication1\obj\Debug\net9.0\refint\W
 C:\Users\admin\RiderProjects\Rentacar1\WebApplication1\obj\Debug\net9.0\WebApplication1.pdb
 C:\Users\admin\RiderProjects\Rentacar1\WebApplication1\obj\Debug\net9.0\WebApplication1.genruntimeconfig.cache
 C:\Users\admin\RiderProjects\Rentacar1\WebApplication1\obj\Debug\net9.0\ref\WebApplication1.dll
+C:\Users\admin\RiderProjects\Rentacar1\WebApplication1\obj\Debug\net9.0\WebApplication1.sourcelink.json
+C:\Users\admin\RiderProjects\Rentacar1\WebApplication1\bin\Debug\net9.0\WebApplication1.staticwebassets.runtime.json

@@ -1,0 +1,33 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\admin\\RiderProjects\\Rentacar1\\WebApplication1\\wwwroot\\CarPhoto\\depositphotos_248507080-stock-photo-2017-november-tokyo-japan-mercedes.jpg",
+      "PackagePath": "staticwebassets\\CarPhoto\\depositphotos_248507080-stock-photo-2017-november-tokyo-japan-mercedes.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\RiderProjects\\Rentacar1\\WebApplication1\\wwwroot\\CarPhoto\\r3l2psut0e67h21quun8q8r4rkghq6z4.jpg",
+      "PackagePath": "staticwebassets\\CarPhoto\\r3l2psut0e67h21quun8q8r4rkghq6z4.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.WebApplication1.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.WebApplication1.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.build.WebApplication1.props",
+      "PackagePath": "build\\WebApplication1.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildMultiTargeting.WebApplication1.props",
+      "PackagePath": "buildMultiTargeting\\WebApplication1.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildTransitive.WebApplication1.props",
+      "PackagePath": "buildTransitive\\WebApplication1.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

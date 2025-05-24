@@ -1,0 +1,28 @@
+﻿<Project>
+  <ItemGroup>
+    <StaticWebAssetEndpoint Include="_content/WebApplication1/CarPhoto/depositphotos_248507080-stock-photo-2017-november-tokyo-japan-mercedes.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\CarPhoto\depositphotos_248507080-stock-photo-2017-november-tokyo-japan-mercedes.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-IUyqMS27ENNK7AhmPfqjCjDh0TV\u002Bw\u002BDs5SQYPuwmFz0="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"9138"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022IUyqMS27ENNK7AhmPfqjCjDh0TV\u002Bw\u002BDs5SQYPuwmFz0=\u0022"},{"Name":"Last-Modified","Value":"Sat, 24 May 2025 17:19:34 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/WebApplication1/CarPhoto/depositphotos_248507080-stock-photo-2017-november-tokyo-japan-mercedes.xsthrcrpnm.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\CarPhoto\depositphotos_248507080-stock-photo-2017-november-tokyo-japan-mercedes.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"xsthrcrpnm"},{"Name":"integrity","Value":"sha256-IUyqMS27ENNK7AhmPfqjCjDh0TV\u002Bw\u002BDs5SQYPuwmFz0="},{"Name":"label","Value":"_content/WebApplication1/CarPhoto/depositphotos_248507080-stock-photo-2017-november-tokyo-japan-mercedes.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"9138"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022IUyqMS27ENNK7AhmPfqjCjDh0TV\u002Bw\u002BDs5SQYPuwmFz0=\u0022"},{"Name":"Last-Modified","Value":"Sat, 24 May 2025 17:19:34 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/WebApplication1/CarPhoto/r3l2psut0e67h21quun8q8r4rkghq6z4.9l0vpwlle4.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\CarPhoto\r3l2psut0e67h21quun8q8r4rkghq6z4.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"9l0vpwlle4"},{"Name":"integrity","Value":"sha256-vd2A1e277UdWxWZo0kI4Ctu77xssL87ypYjqha\u002BctLg="},{"Name":"label","Value":"_content/WebApplication1/CarPhoto/r3l2psut0e67h21quun8q8r4rkghq6z4.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"309198"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022vd2A1e277UdWxWZo0kI4Ctu77xssL87ypYjqha\u002BctLg=\u0022"},{"Name":"Last-Modified","Value":"Sat, 24 May 2025 17:58:17 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/WebApplication1/CarPhoto/r3l2psut0e67h21quun8q8r4rkghq6z4.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\CarPhoto\r3l2psut0e67h21quun8q8r4rkghq6z4.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-vd2A1e277UdWxWZo0kI4Ctu77xssL87ypYjqha\u002BctLg="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"309198"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022vd2A1e277UdWxWZo0kI4Ctu77xssL87ypYjqha\u002BctLg=\u0022"},{"Name":"Last-Modified","Value":"Sat, 24 May 2025 17:58:17 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+  </ItemGroup>
+</Project>

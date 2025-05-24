@@ -11,37 +11,37 @@ public class CarController(ICarService _carService) : Controller
 {
    
     [HttpGet("getall")]
-    public Task<Response<List<Car>>> GetCarsAsync()
+    public async Task<Response<List<Car>>> GetCarsAsync()
     {
-        var result = _carService.GetCarsAsync();
+        var result = await _carService.GetCarsAsync();
         return result;
     }
     
     [HttpGet("getbyid/{id}")]
-    public Task<Response<Car>> GetCarByIdAsync(int id)
+    public async Task<Response<Car>> GetCarByIdAsync(int id)
     {
-        var result = _carService.GetCarByIdAsync(id);
+        var result = await _carService.GetCarByIdAsync(id);
         return result;
     }
     
     [HttpPost("addcar")]
-    public Task<Response<string>> AddCarAsync(Car car)
+    public async Task<Response<string>> AddCarAsync([FromForm] Car car)
     {
-        var result = _carService.AddCarAsync(car);
+        var result = await _carService.AddCarAsync(car);
         return result;
     }
     
     [HttpPut("updatecar")]
-    Task<Response<string>> UpdateCarAsync(Car car)
+    public async Task<Response<string>> UpdateCarAsync(Car car)
     {
-        var result = _carService.UpdateCarAsync(car);
+        var result = await _carService.UpdateCarAsync(car);
         return result;
     }
     
     [HttpDelete("deletecar/{id}")]
-    public Task<Response<string>> DeleteCarAsync(int id)
+    public async Task<Response<string>> DeleteCarAsync(int id)
     {
-        var result = _carService.DeleteCarAsync(id);
+        var result = await _carService.DeleteCarAsync(id);
         return result;
     }
    

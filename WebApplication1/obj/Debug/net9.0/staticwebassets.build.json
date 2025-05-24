@@ -1,12 +1,228 @@
 {
   "Version": 1,
-  "Hash": "SOwnQaRbYOGhWkmnAJKwdq79srT7hswqSxEp5hi48iY=",
+  "Hash": "McTba2s1cLuyma29bK/FZmI4i5uNYbr17CAxbb/ACio=",
   "Source": "WebApplication1",
   "BasePath": "_content/WebApplication1",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": [],
-  "Endpoints": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "WebApplication1\\wwwroot",
+      "Source": "WebApplication1",
+      "ContentRoot": "C:\\Users\\admin\\RiderProjects\\Rentacar1\\WebApplication1\\wwwroot\\",
+      "BasePath": "_content/WebApplication1",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\admin\\RiderProjects\\Rentacar1\\WebApplication1\\wwwroot\\CarPhoto\\depositphotos_248507080-stock-photo-2017-november-tokyo-japan-mercedes.jpg",
+      "SourceId": "WebApplication1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\admin\\RiderProjects\\Rentacar1\\WebApplication1\\wwwroot\\",
+      "BasePath": "_content/WebApplication1",
+      "RelativePath": "CarPhoto/depositphotos_248507080-stock-photo-2017-november-tokyo-japan-mercedes#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "xsthrcrpnm",
+      "Integrity": "IUyqMS27ENNK7AhmPfqjCjDh0TV+w+Ds5SQYPuwmFz0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\CarPhoto\\depositphotos_248507080-stock-photo-2017-november-tokyo-japan-mercedes.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\admin\\RiderProjects\\Rentacar1\\WebApplication1\\wwwroot\\CarPhoto\\r3l2psut0e67h21quun8q8r4rkghq6z4.jpg",
+      "SourceId": "WebApplication1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\admin\\RiderProjects\\Rentacar1\\WebApplication1\\wwwroot\\",
+      "BasePath": "_content/WebApplication1",
+      "RelativePath": "CarPhoto/r3l2psut0e67h21quun8q8r4rkghq6z4#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "9l0vpwlle4",
+      "Integrity": "vd2A1e277UdWxWZo0kI4Ctu77xssL87ypYjqha+ctLg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\CarPhoto\\r3l2psut0e67h21quun8q8r4rkghq6z4.jpg"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "CarPhoto/depositphotos_248507080-stock-photo-2017-november-tokyo-japan-mercedes.jpg",
+      "AssetFile": "C:\\Users\\admin\\RiderProjects\\Rentacar1\\WebApplication1\\wwwroot\\CarPhoto\\depositphotos_248507080-stock-photo-2017-november-tokyo-japan-mercedes.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9138"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IUyqMS27ENNK7AhmPfqjCjDh0TV+w+Ds5SQYPuwmFz0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 24 May 2025 17:19:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-IUyqMS27ENNK7AhmPfqjCjDh0TV+w+Ds5SQYPuwmFz0="
+        }
+      ]
+    },
+    {
+      "Route": "CarPhoto/depositphotos_248507080-stock-photo-2017-november-tokyo-japan-mercedes.xsthrcrpnm.jpg",
+      "AssetFile": "C:\\Users\\admin\\RiderProjects\\Rentacar1\\WebApplication1\\wwwroot\\CarPhoto\\depositphotos_248507080-stock-photo-2017-november-tokyo-japan-mercedes.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9138"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IUyqMS27ENNK7AhmPfqjCjDh0TV+w+Ds5SQYPuwmFz0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 24 May 2025 17:19:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xsthrcrpnm"
+        },
+        {
+          "Name": "label",
+          "Value": "CarPhoto/depositphotos_248507080-stock-photo-2017-november-tokyo-japan-mercedes.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-IUyqMS27ENNK7AhmPfqjCjDh0TV+w+Ds5SQYPuwmFz0="
+        }
+      ]
+    },
+    {
+      "Route": "CarPhoto/r3l2psut0e67h21quun8q8r4rkghq6z4.9l0vpwlle4.jpg",
+      "AssetFile": "C:\\Users\\admin\\RiderProjects\\Rentacar1\\WebApplication1\\wwwroot\\CarPhoto\\r3l2psut0e67h21quun8q8r4rkghq6z4.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "309198"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vd2A1e277UdWxWZo0kI4Ctu77xssL87ypYjqha+ctLg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 24 May 2025 17:58:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9l0vpwlle4"
+        },
+        {
+          "Name": "label",
+          "Value": "CarPhoto/r3l2psut0e67h21quun8q8r4rkghq6z4.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-vd2A1e277UdWxWZo0kI4Ctu77xssL87ypYjqha+ctLg="
+        }
+      ]
+    },
+    {
+      "Route": "CarPhoto/r3l2psut0e67h21quun8q8r4rkghq6z4.jpg",
+      "AssetFile": "C:\\Users\\admin\\RiderProjects\\Rentacar1\\WebApplication1\\wwwroot\\CarPhoto\\r3l2psut0e67h21quun8q8r4rkghq6z4.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "309198"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vd2A1e277UdWxWZo0kI4Ctu77xssL87ypYjqha+ctLg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 24 May 2025 17:58:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-vd2A1e277UdWxWZo0kI4Ctu77xssL87ypYjqha+ctLg="
+        }
+      ]
+    }
+  ]
 }

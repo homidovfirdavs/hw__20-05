@@ -46,7 +46,7 @@ public class CustomerService(DapperContext context) : ICustomerService
     {
         using (var connection = await context.GetConnectionAsync())
         {
-            var cmd = await connection.QueryFirstOrDefaultAsync<Customer>("select * from customers where id = @id", customer);
+            var cmd = await connection.QueryFirstOrDefaultAsync<Customer>("select * from customers where id = @id", new { id = customer.Id });
             if (cmd == null)
             {
                 return new Response<string>("Customer not found", HttpStatusCode.NotFound);

@@ -10,37 +10,37 @@ public class CustomerController(ICustomerService _customerService) : Controller
 {
     // GET
     [HttpGet("getall")]
-    public Task<Response<List<Customer>>> GetCustomersAsync()
+    public async Task<Response<List<Customer>>> GetCustomersAsync()
     {
-        var result = _customerService.GetCustomersAsync();
+        var result = await _customerService.GetCustomersAsync();
         return result;
     }
     
     [HttpGet("getbyid/{id}")]
-    public Task<Response<Customer>> GetCustomerByIdAsync(int id)
+    public async Task<Response<Customer>> GetCustomerByIdAsync(int id)
     {
-        var result = _customerService.GetCustomerByIdAsync(id);
+        var result = await _customerService.GetCustomerByIdAsync(id);
         return result;
     }
     
     [HttpPost("addcustomer")]
-    public Task<Response<string>> AddCustomerAsync(Customer customer)
+    public async Task<Response<string>> AddCustomerAsync(Customer customer)
     {
-        var result = _customerService.AddCustomerAsync(customer);
+        var result = await _customerService.AddCustomerAsync(customer);
         return result;
     }
     
     [HttpPut("updatecustomer")]
-    Task<Response<string>> UpdateCustomerAsync(Customer customer)
+    public async Task<Response<string>> UpdateCustomerAsync(Customer customer)
     {
-        var result = _customerService.UpdateCustomerAsync(customer);
+        var result = await _customerService.UpdateCustomerAsync(customer);
         return result;
     }
     
     [HttpDelete("deletecustomer/{id}")]
-    public Task<Response<string>> DeleteCustomerAsync(int id)
+    public async Task<Response<string>> DeleteCustomerAsync(int id)
     {
-        var result = _customerService.DeleteCustomerAsync(id);
+        var result = await _customerService.DeleteCustomerAsync(id);
         return result;
     }
 }

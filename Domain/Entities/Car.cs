@@ -1,4 +1,6 @@
-﻿namespace Domain.Entities;
+﻿using Microsoft.AspNetCore.Http;
+
+namespace Domain.Entities;
 
 public class Car
 {
@@ -7,4 +9,5 @@ public class Car
     public string Manufacturer { get; set; }
     public int Year { get; set; }
     public decimal PricePerDay { get; set; }
+    public IFormFile Photo { get; set; }
 }
